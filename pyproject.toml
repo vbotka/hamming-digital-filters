@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hamming_digital_filters"
+version = "0.0.3"
+authors = [
+  { name="Vladimir Botka", email="vbotka@gmail.com" },
+  ]
+description = "Digital Filters by R.W.Hamming. Implementation."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vbotka/hamming-digital-filters"
+"Bug Tracker" = "https://github.com/vbotka/hamming-digital-filters/issues"
