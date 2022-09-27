@@ -7,12 +7,21 @@ See [wiki](https://github.com/vbotka/hamming-digital-filters/wiki). Feel free to
 
 [Contributions are welcome](https://github.com/firstcontributions/first-contributions).
 
-### Gradient
+## Modules
+
+### gradient
+
+Differentiation Filters:
 
 * [gradient_nr](https://github.com/vbotka/hamming-digital-filters/wiki#gradientgradient_nr) Nonrecursive differentiation filter
 
+### lowpass
 
-### Reference
+Low-Pass Filters:
+
+* [lowpass_nr](https://github.com/vbotka/hamming-digital-filters/wiki#lowpass_nr) Nonrecursive low-pass filter
+
+## References
 
 * Digital Filters by R.W.Hamming,third edition; Dover publications,
   INC., Mineola, New York; ISBN 0-486-65088-X
