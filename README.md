@@ -1,5 +1,7 @@
+# hamming-digital-filters
+[![](https://img.shields.io/pypi/v/hamming-digital-filters?color=green)](https://pypi.org/project/hamming-digital-filters/)[![license](https://img.shields.io/badge/license-BSD-red.svg)](https://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html)
+
 ## Digital filters by R.W.Hamming. Implementation.
-[![](https://img.shields.io/pypi/v/hamming-digital-filters.svg)](https://pypi.org/project/hamming-digital-filters/)
 
 ### Gradient
 
