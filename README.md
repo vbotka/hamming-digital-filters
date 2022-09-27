@@ -3,6 +3,10 @@
 
 ## Digital filters by R.W.Hamming. Implementation.
 
+See [wiki](https://github.com/vbotka/hamming-digital-filters/wiki). Feel free to [share your feedback and report issues](https://github.com/vbotka/hamming-digital-filters/issues).
+
+[Contributions are welcome](https://github.com/firstcontributions/first-contributions).
+
 ### Gradient
 
 * [gradient_nr](https://github.com/vbotka/hamming-digital-filters/wiki#gradientgradient_nr) Nonrecursive differentiation filter
