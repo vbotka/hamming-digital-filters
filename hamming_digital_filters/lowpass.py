@@ -9,11 +9,12 @@ import math
 
 
 def lowpass_nr(f, fc=0.2, nfp=5):
-    ''' Chapter 6.2 A Low-Pass Filter Design '''
+    ''' Chapter 6.2 A Low-Pass Filter Design. Nonrecursive. '''
 
     coef = [0.0] * (2 * nfp + 1)
     coef[nfp] = 2.0 * fc
-    sfx = [0.0] * len(f)
+    sf = [0.0] * len(f)
+
     for k in range(1, nfp):
         xd = math.pi * k
         yd = xd / nfp
@@ -23,8 +24,27 @@ def lowpass_nr(f, fc=0.2, nfp=5):
         coef[nfp - k] = c1 * c2
 
     for i in range(0, len(f) - 2 * nfp):
-        ssfx = 0.0
-        for j in range(0, 2 * nfp):
-            ssfx = ssfx + coef[j] * f[i + j]
-        sfx[nfp + i] = ssfx
-    return sfx
+        s = 0.0
+        for j in range(0, 2 * nfp + 1):
+            s = s + coef[j] * f[i + j]
+        sf[nfp + i] = s
+
+    return sf
+
+
+def lowpass_mt(f, pq='3_1'):
+    ''' Chapter 7.5 The Design Of A Smooth Filter. Monotone. '''
+
+    frac = (1 / 16) ** 2
+    coef_3_1 = [frac * c for c in [-1, -5, -5, 20, 70, 98, 70, 20, -5, -5, -1]]
+    coef = {'3_1': coef_3_1}
+    nfp = (len(coef[pq]) - 1) // 2
+    sf = [0.0] * len(f)
+
+    for i in range(0, len(f) - 2 * nfp):
+        s = 0.0
+        for j in range(0, 2 * nfp + 1):
+            s = s + coef[pq][j] * f[i + j]
+        sf[nfp + i] = s
+
+    return sf
