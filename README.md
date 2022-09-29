@@ -16,7 +16,7 @@ See [wiki](https://github.com/vbotka/hamming-digital-filters/wiki). Feel free to
 
 [Differentiation Filters](https://github.com/vbotka/hamming-digital-filters/wiki/Module-gradient.-Differentiation-Filters.)
 
-* [gradient_nr](https://github.com/vbotka/hamming-digital-filters/wiki/Module-lowpass.-Low-Pass-Filters.#lowpasslowpass_nr) Nonrecursive Differentiation Filter
+* [gradient_nr](https://github.com/vbotka/hamming-digital-filters/wiki/Module-gradient.-Differentiation-Filters.#gradientgradient_nr) Nonrecursive Differentiation Filter
 
 
 ### lowpass
