@@ -36,13 +36,11 @@ z = np.array([math.cos(xi) for xi in x])
 
 r = np.array([yi + (random.random() - 0.5) * noise for yi in y])
 dist_r = distance(y, r)
-
 drdx = hdfg.gradient_nr(r, dx, fc, nfp)
 dist_d = distance(z[nfp:-nfp], drdx[nfp:-nfp])
 
 s1 = hdfl.lowpass_nr(r, fc, nfp)
 dist_s1 = distance(y, s1)
-
 ds1dx = hdfg.gradient_nr(s1, dx, fc, nfp)
 dist_d1 = distance(z[nnfp:-nnfp], ds1dx[nnfp:-nnfp])
 

@@ -58,12 +58,12 @@ plt.title("gradient_nr fc=0.1, N=7, dist f="
           + print_to_string(dist_r) + ", dist df="
           + print_to_string(dist_d))
 plt.xlabel("x")
-plt.ylabel("sin(x)+random()/50, cos(x),  d(sin(x))/dx")
+plt.ylabel("sin(x)+random()/100, cos(x), d(sin(x))/dx")
 plt.plot(x, r, x, z, x[7:-7], drdx_7[7:-7])
 plt.show()
 
 plt.title("NumPy gradient filter")
 plt.xlabel("x")
-plt.ylabel("sin(x)+random()/50, cos(x),  d(sin(x))/dx")
+plt.ylabel("sin(x)+random()/100, cos(x), d(sin(x))/dx")
 plt.plot(x, r, x, z, x, drdx_n)
 plt.show()
